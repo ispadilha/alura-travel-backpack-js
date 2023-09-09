@@ -22,6 +22,7 @@ form.addEventListener('submit', (evento) =>{
     if (exists){
         currentItem.id = exists.id;
         updatesElement(currentItem);
+        itens[exists.id] = currentItem;
     } else {
         currentItem.id = itens.length;
         createElement(currentItem);
